@@ -53,7 +53,7 @@ class HighlightjsIntegration
             $htmlAttributes['class'] = 'code2highlight';
         }
 
-        if ( isset( $lang ) && $lang !== '' )
+        if ( !empty( $lang ) )
         {
             $htmlAttributes['class'] .= " lang-$lang";
         }
